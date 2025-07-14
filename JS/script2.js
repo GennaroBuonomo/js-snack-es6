@@ -6,3 +6,9 @@ const squadreCalcio =[
   { nome: "Roma", punti: 0, falliSubiti: 0 },
   { nome: "Juventus", punti: 0, falliSubiti: 0 },
 ];
+
+// Funzione per generare un numero random 
+for (let i = 0; i< squadreCalcio.length; i++){
+  squadreCalcio[i].punti = getRandomNumber(20, 80);
+  squadreCalcio[i].falliSubiti = getRandomNumber(50, 250);
+}
