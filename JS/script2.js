@@ -20,12 +20,15 @@ for (let i = 0; i< squadreCalcio.length; i++){
 }
 
 // array con solo nome e falli subiti
-const nomiEFalli = squadreCalcio.map(squadra => {
-  return {
+const nomiEFalli = [];
+
+for (let i = 0; i < squadreCalcio.length; i++) {
+  const squadra = squadreCalcio[i];
+  nomiEFalli.push({
     nome: squadra.nome,
     falliSubiti: squadra.falliSubiti
-  };
-});
+  });
+}
 
 // Stampo in console i dati generati
 console.log("Array aquadre calcio con punti e falli")
