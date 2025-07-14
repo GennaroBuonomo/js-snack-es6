@@ -8,6 +8,12 @@ const squadreCalcio =[
 ];
 
 // Funzione per generare un numero random 
+function getRandomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+
+// Numeri random per falli e punti
 for (let i = 0; i< squadreCalcio.length; i++){
   squadreCalcio[i].punti = getRandomNumber(20, 80);
   squadreCalcio[i].falliSubiti = getRandomNumber(50, 250);
@@ -20,3 +26,9 @@ const nomiEFalli = squadreCalcio.map(squadra => {
     falliSubiti: squadra.falliSubiti
   };
 });
+
+// Stampo in console i dati generati
+console.log("Array aquadre calcio con punti e falli")
+console.log(squadreCalcio)
+console.log("Array con solo nome e falli subiti:");
+console.log(nomiEFalli);
