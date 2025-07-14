@@ -15,3 +15,6 @@ for (let i =1; i < biciDaCorsa.length; i++) {
     biciLeggera = biciDaCorsa[i];
   }
 }
+
+//Stampo in console la bici con minor peso 
+console.log(`La bici più leggera è: ${biciLeggera.nome},con un peso di ${biciLeggera.peso} Kg.`);
