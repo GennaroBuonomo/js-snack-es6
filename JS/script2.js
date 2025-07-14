@@ -12,3 +12,11 @@ for (let i = 0; i< squadreCalcio.length; i++){
   squadreCalcio[i].punti = getRandomNumber(20, 80);
   squadreCalcio[i].falliSubiti = getRandomNumber(50, 250);
 }
+
+// array con solo nome e falli subiti
+const nomiEFalli = squadreCalcio.map(squadra => {
+  return {
+    nome: squadra.nome,
+    falliSubiti: squadra.falliSubiti
+  };
+});
